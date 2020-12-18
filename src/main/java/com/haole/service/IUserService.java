@@ -1,6 +1,7 @@
 package com.haole.service;
 
 import com.haole.domain.User;
+import org.apache.ibatis.annotations.Delete;
 
 import java.util.List;
 
@@ -27,4 +28,19 @@ public interface IUserService {
      * @param user
      */
     void updateUser(User user);
+
+    /**
+     * 删除用户
+     *
+     * @param userId
+     */
+    int deleteUser(Integer userId);
+
+    /**
+     * 新增用户
+     * @param user
+     * @return
+     */
+    int addUser(User user);
+
 }
