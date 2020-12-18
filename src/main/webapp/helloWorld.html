@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>第一个Vue应用</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <!-- 声明式渲染 -->
+    <!--Vue.js的核心是一个系统，允许采用简洁的模板语法来声明式地将数据渲染进DOM的系统。-->
+    <div id="app">
+        {{message}}
+    </div>
+<script>
+    var app=new Vue({
+        el:"#app",
+        data:{
+            message:'hello haole!'
+        }
+    });
+</script>
+</body>
+</html>
