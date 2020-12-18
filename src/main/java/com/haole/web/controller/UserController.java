@@ -34,8 +34,8 @@ public class UserController {
      * @param id
      * @return
      */
-    @RequestMapping("/findById")
-    public User findById(Integer id) {
+    @RequestMapping("/findByUserid")
+    public User findByUserid(Integer id) {
         return userService.findById(id);
     }
 
