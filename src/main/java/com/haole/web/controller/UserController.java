@@ -26,8 +26,8 @@ public class UserController {
     @RequestMapping("/findAll")
     public List<User> findAll() {
         System.out.println("测试冲突mast1");
-        System.out.println("测试冲突mast2");
-        System.out.println("测试冲突mast3");
+        System.out.println("测试冲突dev2");
+
         return userService.findAll();
     }
 
